@@ -148,17 +148,7 @@ VOLUME /root/zello/custom
 # CLEAN UP
 ###############################################################################
 
-# uninstall not needed packages, clean tmp dir and apt lists
-RUN \
-  apt-get purge \
-  p7zip-full \
 
-  && apt-get clean \
-  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-
-# unset proxy
-ENV http_proxy ""
-ENV https_proxy ""
 
 ###############################################################################
 # END OF DOCKERFILE
