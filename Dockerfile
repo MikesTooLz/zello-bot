@@ -6,9 +6,9 @@ MAINTAINER Carsten Perthel <carsten@cpesoft.com>
 #ENV https_proxy "http://user:password@proxy:port"
 
 # Ensure UTF-8
-RUN locale-gen de_DE.UTF-8
-ENV LANG       de_DE.UTF-8
-ENV LC_ALL     de_DE.UTF-8
+RUN locale-gen en_US.UTF-8
+ENV LANG       en_US.UTF-8
+ENV LC_ALL     en_US.UTF-8
 
 # Set timezone
 ENV TZ Europe/Berlin
